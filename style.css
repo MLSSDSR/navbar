@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='721.6' preserveAspectRatio='none' viewBox='0 0 2000 721.6'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1165%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c553.6 C 40%2c493.6 120%2c236 200%2c253.60000000000002 C 280%2c271.2 320%2c659.4 400%2c641.6 C 480%2c623.8 520%2c218.6 600%2c164.60000000000002 C 680%2c110.6 720%2c346.6 800%2c371.6 C 880%2c396.6 920%2c288.8 1000%2c289.6 C 1080%2c290.4 1120%2c367.2 1200%2c375.6 C 1280%2c384 1320%2c292.8 1400%2c331.6 C 1480%2c370.4 1520%2c618.6 1600%2c569.6 C 1680%2c520.6 1720%2c97.4 1800%2c86.60000000000002 C 1880%2c75.8 1960%2c429.8 2000%2c515.6L2000 721.6L0 721.6z' fill='rgba(253%2c 187%2c 45%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1165'%3e%3crect width='2000' height='721.6' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22c1c3;
+  opacity: 0.6;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap ");
+
+* {
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgb(255, 216, 236);
+  background: radial-gradient(
+    circle,
+    rgba(255, 216, 236, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+.color-box {
+  background-color: #feca92;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 250px;
+  color: white;
+  text-align: center;
+} ;
